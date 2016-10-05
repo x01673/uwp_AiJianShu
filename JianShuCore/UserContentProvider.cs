@@ -18,7 +18,11 @@ namespace JianShuCore
         public async Task<LoginResult> Login(string username, string password)
         {
             WebContentProvider web = WebContentProvider.GetInstance();
-            string content = string.Format("email={0}&password={1}", Uri.EscapeDataString(username), Uri.EscapeDataString(password));
+            //v1 版本api
+            //string content = string.Format("email={0}&password={1}", Uri.EscapeDataString(username), Uri.EscapeDataString(password));
+            // v2
+
+            string content = string.Format("sign_in_name={0}&password={1}", Uri.EscapeDataString(username),Uri.EscapeDataString(password));
             return await web.HttpPostRequest<LoginResult>(Config.Login, content, web.GetHeaders(null, null));
         }
 

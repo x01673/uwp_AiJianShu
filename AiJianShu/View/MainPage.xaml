@@ -30,7 +30,7 @@
     <Grid>
         <SplitView x:Name="splitView" OpenPaneLength="150"  PaneClosed="SplitViewPaneClosed"
                    CompactPaneLength="{Binding DeviceFamily, Converter={StaticResource LengthConverter}}" 
-                   PaneBackground="#2A2A2A" DisplayMode="CompactOverlay" Grid.Row="1">
+                   PaneBackground="#2A2A2A" DisplayMode="CompactOverlay" Grid.Row="1" >
             <SplitView.Pane>
                 <Grid>
                     <Grid.RowDefinitions>
@@ -44,8 +44,9 @@
                                       GroupName="RDG" Height="45" 
                                       HorizontalAlignment="Stretch" VerticalContentAlignment="Center">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock FontFamily="Segoe MDL2 Assets"  Foreground="White" Text="&#xE10F;" 
-                                           FontSize="20" Height="20" Margin="8,0,0,5"/>
+                                <!--<TextBlock FontFamily="Segoe MDL2 Assets"  Foreground="White" Text="&#xE10F;" 
+                                           FontSize="20" Height="20" Margin="8,0,0,5"/>-->
+                                <BitmapIcon UriSource="ms-appx:///Assets/cb_icon_discover_selected.png" Height="20" Margin="8,0,0,5" />
                                 <TextBlock x:Uid="Home" Margin="20,0,0,0" FontSize="15"/>
                             </StackPanel>
                         </RadioButton>
@@ -53,8 +54,9 @@
                                       Style="{StaticResource ImageRadiobutton}" GroupName="RDG" Height="45" 
                                       HorizontalAlignment="Stretch" VerticalContentAlignment="Center">
                             <StackPanel Orientation="Horizontal">
-                                <TextBlock FontFamily="Segoe MDL2 Assets"  Foreground="White" Text="&#xE2AF;" 
-                                           FontSize="20" Height="20" Margin="8,0,0,5"/>
+                                <!--<TextBlock FontFamily="Segoe MDL2 Assets"  Foreground="White" Text="&#xE2AF;" 
+                                           FontSize="20" Height="20" Margin="8,0,0,5"/>-->
+                                <BitmapIcon UriSource="ms-appx:///Assets/cb_icon_guanzhu_selected.png" Height="20" Margin="8,0,0,5"/>
                                 <TextBlock x:Uid="Follow" Margin="20,0,0,0" FontSize="15"/>
                             </StackPanel>
                         </RadioButton>
@@ -63,8 +65,9 @@
                                      HorizontalAlignment="Stretch" VerticalContentAlignment="Center">
                             <RadioButton.Content>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock FontFamily="Segoe MDL2 Assets"  Foreground="White" Text="&#xE82D;" 
-                                               FontSize="20" Height="20" Margin="10,0,0,5"/>
+                                    <!--<TextBlock FontFamily="Segoe MDL2 Assets"  Foreground="White" Text="&#xE82D;" 
+                                               FontSize="20" Height="20" Margin="10,0,0,5"/>-->
+                                    <BitmapIcon UriSource="ms-appx:///Assets/grzy_icon_follower_normal.png" Margin="8,0,0,5" Height="20"/>
                                     <TextBlock x:Uid="Topic" Margin="18,0,0,0" FontSize="15"/>
                                 </StackPanel>
                             </RadioButton.Content>
@@ -74,8 +77,9 @@
                                      HorizontalAlignment="Stretch" VerticalContentAlignment="Center">
                             <RadioButton.Content>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock FontFamily="Segoe MDL2 Assets"  Foreground="White" Text="&#xE125;" 
-                                               FontSize="20" Height="20" Margin="10,0,0,5"/>
+                                    <!--<TextBlock FontFamily="Segoe MDL2 Assets"  Foreground="White" Text="&#xE125;" 
+                                               FontSize="20" Height="20" Margin="10,0,0,5"/>-->
+                                    <BitmapIcon UriSource="ms-appx:///Assets/cb_icon_more_selected.png" Height="20" Margin="8,0,0,5"/>
                                     <TextBlock x:Uid="Friends" Margin="18,0,0,0" FontSize="15"/>
                                 </StackPanel>
                             </RadioButton.Content>
@@ -117,9 +121,9 @@
                 </Grid>
             </SplitView.Pane>
             <ContentControl Content="{Binding CurrentViewModel}" ContentTemplate="{Binding Path=CurrentTemplate}" 
-                            HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+                            HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
         </SplitView>
-        <Border  x:Name="MessageBorder" MinHeight="40" Grid.Row="1" HorizontalAlignment="Right" Width="200" Margin="0,20,-200,0"  VerticalAlignment="Top" Background="#E9967A">
+        <Border  x:Name="MessageBorder" MinHeight="40"  Grid.Row="1" HorizontalAlignment="Right" Width="200" Margin="0,20,-200,0"  VerticalAlignment="Top" Background="#E9967A">
             <Border.RenderTransform>
                 <CompositeTransform/>
             </Border.RenderTransform>

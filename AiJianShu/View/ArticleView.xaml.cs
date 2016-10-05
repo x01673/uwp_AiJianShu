@@ -13,6 +13,11 @@ namespace AiJianShu.View
             {
                 this.Unloaded += ArticleViewUnloaded;
                 Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtonsBackPressed;
+                /*
+                 WindowsRuntimeMarshal.AddEventHandler<RoutedEventHandler>(new Func<RoutedEventHandler, EventRegistrationToken>(this.add_Unloaded), new Action<EventRegistrationToken>(this.remove_Unloaded), new RoutedEventHandler(this.ArticleViewUnloaded));
+                WindowsRuntimeMarshal.AddEventHandler<EventHandler<BackPressedEventArgs>>(new Func<EventHandler<BackPressedEventArgs>, EventRegistrationToken>(HardwareButtons.add_BackPressed), new Action<EventRegistrationToken>(HardwareButtons.remove_BackPressed), new EventHandler<BackPressedEventArgs>(this.HardwareButtonsBackPressed));
+    
+                */
             }
         }
 

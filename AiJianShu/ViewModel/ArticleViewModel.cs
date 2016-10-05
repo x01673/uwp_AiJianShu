@@ -59,8 +59,12 @@ namespace AiJianShu.ViewModel
         #endregion
 
         #region 公有方法
+        /// <summary>
+        /// 发送消息到注册ChangeView类型的VM（MainViewModel）
+        /// </summary>
         public void BackPreView()
         {
+            
             MessengerInstance.Send<ChangeView>(new ChangeView() { FromView = ViewType.Article, ToView = backView });
         }
         #endregion

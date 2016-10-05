@@ -11,8 +11,8 @@
     <AssemblyName>AiJianShu</AssemblyName>
     <DefaultLanguage>zh-CN</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
@@ -188,10 +188,53 @@
     <None Include="AiJianShu_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\cb_icon_discover_selected.png" />
+    <Content Include="Assets\cb_icon_guanzhu_selected.png" />
+    <Content Include="Assets\cb_icon_jianyouquan_selected.png" />
+    <Content Include="Assets\cb_icon_money.png" />
+    <Content Include="Assets\cb_icon_more_selected.png" />
+    <Content Include="Assets\cb_icon_night.png" />
     <Content Include="Assets\default_avatar.png" />
     <Content Include="Assets\arrow.png" />
+    <Content Include="Assets\grzy_icon_follower_normal.png" />
+    <Content Include="Assets\grzy_icon_following_normal.png" />
+    <Content Include="Assets\grzy_icon_guanzhu_normal.png" />
+    <Content Include="Assets\grzy_icon_like_normal.png" />
+    <Content Include="Assets\grzy_icon_mark.png" />
+    <Content Include="Assets\grzy_icon_shejiao_normal.png" />
+    <Content Include="Assets\grzy_icon_wenji_normal.png" />
+    <Content Include="Assets\grzy_icon_zhuanti_normal.png" />
+    <Content Include="Assets\guanzhu_default_pic_normal.png" />
+    <Content Include="Assets\icon_comment_add_new.png" />
+    <Content Include="Assets\icon_like_new.png" />
+    <Content Include="Assets\icon_like_selected.png" />
+    <Content Include="Assets\icon_reply_new.png" />
+    <Content Include="Assets\icon_share_new.png" />
+    <Content Include="Assets\icon_shou_cang_new.png" />
+    <Content Include="Assets\icon_shou_cang_selected_new.png" />
+    <Content Include="Assets\icon_sns_weibo.png" />
+    <Content Include="Assets\image_ask.png" />
+    <Content Include="Assets\image_guanzhu.png" />
+    <Content Include="Assets\image_jianyouquan.png" />
+    <Content Include="Assets\image_like.png" />
+    <Content Include="Assets\image_message.png" />
+    <Content Include="Assets\image_other.png" />
+    <Content Include="Assets\image_reward.png" />
+    <Content Include="Assets\image_talk.png" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\logo.png" />
+    <Content Include="Assets\logo_jianshu.png" />
+    <Content Include="Assets\ReadHtml.html" />
+    <Content Include="Assets\search_icon.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\tx_image_1.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\wj_image.png" />
+    <Content Include="Assets\zt_icon_tjbj.png" />
+    <Content Include="Assets\zt_image_1.png" />
+    <Content Include="Assets\zw_icon_like_normal_new.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
@@ -264,7 +307,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\JianShuCore\JianShuCore.csproj">
       <Project>{e3e75416-b633-415c-8fe9-0b5a2cae1df0}</Project>
@@ -279,8 +321,8 @@
     <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">
       <Name>Behaviors SDK %28XAML%29</Name>
     </SDKReference>
-    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
-      <Name>Windows Mobile Extensions for the UWP</Name>
+    <SDKReference Include="WindowsMobile, Version=10.0.10586.0">
+      <Name>Windows Mobile Extensions for the UWP %28WindowsMobile, Version=10.0.10586.0%29</Name>
     </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

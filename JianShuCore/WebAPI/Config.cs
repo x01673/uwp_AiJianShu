@@ -4,11 +4,15 @@
     {
         private const string Server = "http://api.jianshu.io/v1";
 
-        internal const string APP_VERSION = "1.6.2";
+        internal const string APP_VERSION = "1.10.0";
 
         internal const string APP_NAME = "haruki";
 
-        internal const string Login = "http://api.jianshu.io/v1/users/signin";
+        //internal const string Login = "http://api.jianshu.io/v1/users/signin";
+        /// <summary>
+        /// v2 version
+        /// </summary>
+        internal const string Login = "https://api.jianshu.io/v2/users/sign_in";
 
         internal const string Register = "http://api.jianshu.io/v1/users/signup";
 
@@ -91,9 +95,17 @@
                                                     app[name]=haruki&app[version]1.6.2&auth1={0}&auth2={1}
                                                     &device[guid]={2}&timestamp={3}&type=for_recommendations&user_id={4}";
 
+        internal const string CollectionCategoriesV2 =
+            "http://api.jianshu.io/v2/collection_categories?type={0}&app[name]=haruki&app[version]=1.11.1&device[guid]={1)";
+
         internal const string ZoneLastestNotes = "http://api.jianshu.io/v1/notes/latest?page={0}";
 
 
         internal const string UserInfo = "http://api.jianshu.io/v1/users/{0}?";
+
+        /// <summary>
+        /// eg: https://api.jianshu.io/v2/admin_banners?app[name]=haruki&amp;app[version]=1.11.1&amp;device[guid]=
+        /// </summary>
+        internal const string Banners = "http://api.jianshu.io/v2/admin_banners"; //获取首页轮播信息
     }
 }

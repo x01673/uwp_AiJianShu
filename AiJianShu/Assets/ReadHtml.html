@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=no" />
+    <style type="text/css">
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei';
+            font-size: 11pt;
+            line-height: 28px;
+            margin: 0px;
+            padding: 10px;
+            -ms-user-select: none;
+            cursor: default;
+        }
+
+        div#headerContainer {
+            border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+            padding-bottom: 10px;
+            overflow: auto;
+            line-height: 20px;
+            color: black;
+        }
+
+        div#title {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: gray;
+        }
+
+        div#info {
+            font-size: 0.7em;
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        div#authorName {
+            margin-left: 50px;
+        }
+
+        div#publishDate {
+            margin-left: 50px;
+            font-size: 0.7em;
+            color: gray;
+        }
+
+        img#authorAvatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="headerContainer">
+        <img id="authorAvatar" src="default_avatar.png" />
+        <div id="authorName">(Author)</div>
+        <div id="publishDate">(PublishDate)</div>
+    </div>
+    <div id="infoContainer">
+        <div id="title">(Title)</div>
+        <div id="info">(ViewCount)次阅 ‧ (WordCount)字</div>
+    </div>
+    <div>
+        (Content)
+    </div>
+</body>
+</html>

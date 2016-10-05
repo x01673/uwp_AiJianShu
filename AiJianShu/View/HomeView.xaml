@@ -13,7 +13,8 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400"
-    x:Name="Layoutroot">
+    x:Name="Layoutroot"
+    >
     <UserControl.Resources>
         <Converter:ScrollVisbilityConverter x:Key="VisbilityConverter"/>
         <Converter:BoolVisiblityConverter x:Key="BoolVisiblityConverter"/>
@@ -41,7 +42,8 @@
                         x:Name="cb_Item" VerticalAlignment="Center" Margin="{Binding DeviceFamily,Converter={StaticResource MarginConverter}}"/>
             <Rectangle Height="40" Width="1" Fill="LightGray" Grid.Column="3"/>
         </Grid>
-        <my:PullToRefreshListView Grid.Row="1" Grid.Column="0" Background="White" ItemContainerStyle="{StaticResource ArticleItemStyle}"
+        <my:PullToRefreshListView Grid.Row="1" Grid.Column="0" Background="White" 
+                                  DataContext="{StaticResource HomeViewModel}" ItemContainerStyle="{StaticResource ArticleItemStyle}"
             ItemTemplate="{StaticResource ArticleTemplate}" BorderBrush="LightGray" BorderThickness="1" ItemsSource="{Binding TrendingList,Mode=TwoWay}"
             ScrollViewer.VerticalScrollBarVisibility="{Binding DeviceFamily,Converter={StaticResource VisbilityConverter}}" x:Name="Left"   
             SelectedItem="{Binding SelectedItem, Mode=TwoWay}"

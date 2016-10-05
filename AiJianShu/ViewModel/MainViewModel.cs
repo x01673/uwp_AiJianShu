@@ -119,7 +119,6 @@ namespace AiJianShu.ViewModel
                 {
                     return null;
                 }
-
                 return Untils.DataTemplateSelector.GetTemplate(CurrentViewModel);
             }
         }
@@ -247,10 +246,12 @@ namespace AiJianShu.ViewModel
 
             NavigationClickCommand = new RelayCommand<object>(ExecuteNavigationClickCommand);
         }
-
+       /// <summary>
+       ///注册消息接收者实例,接收处理来自MessengerInstance.Send《ChangeView》( ChangeView message )的消息
+       /// </summary>
         private void InitListener()
         {
-            this.MessengerInstance.Register<ChangeView>(this, ListenerViewChanged);
+               this.MessengerInstance.Register<ChangeView>(this, ListenerViewChanged);
         }
 
         private async void CheckLogin()
@@ -326,7 +327,8 @@ namespace AiJianShu.ViewModel
 
         #region 切换界面
         private async void SwitchViewModel(ViewType type, object args = null)
-        {
+       
+ {
             switch (type)
             {
                 case ViewType.Home:
